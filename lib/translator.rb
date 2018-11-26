@@ -6,6 +6,8 @@ def load_library(path)
   emoticons.each do |key, values|
     result['get_meaning'][values[0]] = values[1]
     result['get_meaning'][values[1]] = key
+  end
+  result
 end
 
 def get_japanese_emoticon(emote)
